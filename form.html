@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>CatShop - Form</title>
+</head>
+<body>
+    <header class="container__header">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Homepage</a></li>
+                <hr>
+                <li><a href="catalog.html">Catalog</a></li>
+                <hr>
+                <li><a href="form.html">Add Product</a></li>
+                <hr>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container__content">
+        <h1>Cadastro de Produto</h1>
+
+        <form action="formAction.html" method="get">
+            <div>
+                <h2>Informações do Funcionário</h2>
+                <label for="employeeName">Nome do Funcionário:</label>
+                <input type="text" id="employeeName" name="employeeName" required>
+                <br>
+                <br>
+                <label for="employeeId">Código do Funcionário:</label>
+                <input type="text" id="employeeId" name="employeeId" required>
+                <br>
+                <br>
+                <label for="additionDate">Data de Adição:</label>
+                <input type="date" id="additionDate" name="additionDate" required>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <h2>Informações do Produto</h2>
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" name="productName" required>
+                <br>
+                <br>
+                <label for="productDescription">Descrição do Produto:</label>
+                <input type="text" id="productDescription" name="productDescription"required></input>
+                <br>
+                <br>
+                <label for="productPrice">Preço do Produto:</label>
+                <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+                <br>
+                <br>
+                <label for="productQauntity">Quantidade do Produto:</label>
+                <input type="number" id="productQauntity" name="productQauntity" required>
+                <br>
+                <br>
+            </div>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+</body>
+</html>
